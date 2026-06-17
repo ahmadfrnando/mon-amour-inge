@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function startHero() {
     var titleEl = document.getElementById('typing-title');
     var subtitleEl = document.getElementById('hero-subtitle');
+    var subtitleEl2 = document.getElementById('hero-subtitle-2');
     var text = 'Happy Birthday';
     var index = 0;
 
@@ -104,6 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(function () {
           cursor.style.display = 'none';
           subtitleEl.classList.add('show');
+          subtitleEl2.classList.add('show');
         }, 400);
       }
     }
