@@ -338,7 +338,7 @@ img {
 
 .scroll-indicator img {
   width: 100%;
-  filter: brightness(0) invert(1);
+  /* filter: brightness(0) invert(1); */
 }
 
 @keyframes bounce {
@@ -421,7 +421,7 @@ img {
 
 .secret-star img {
   width: 28px;
-  filter: brightness(0) invert(1);
+  /* filter: brightness(0) invert(1); */
   opacity: 0.85;
 }
 
