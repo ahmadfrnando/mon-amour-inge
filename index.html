@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Happy Birthday</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="loading-screen" class="screen active">
+  <div class="loading-stars">
+    <span class="l-star"></span>
+    <span class="l-star"></span>
+    <span class="l-star"></span>
+    <span class="l-star"></span>
+    <span class="l-star"></span>
+    <span class="l-star"></span>
+    <span class="l-star"></span>
+  </div>
+  <p class="loading-text">Loading a small journey<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
+</div>
+
+<div id="challenge-screen" class="screen">
+  <img src="assets/images/galaxy-bg.jpeg" class="bg-img" alt="">
+  <img src="assets/images/nebula-overlay.png" class="overlay-img" alt="">
+  <div class="challenge-content">
+    <p class="challenge-text line-1">Oi Seng <span class="star-emoji">✨</span></p>
+    <p class="challenge-text line-2">Aku punya sesuatu.</p>
+    <p class="challenge-text line-3">Tapi sebelum itu...</p>
+    <p class="challenge-text line-4">Cak temukan satu bintang yang berbeda.</p>
+  </div>
+  <div id="star-field" class="star-field"></div>
+  <div class="challenge-success">
+    <p class="success-text">Mantap, kmu menemukannya.</p>
+    <p class="success-sub">Yuk lanjut seng kebawah.</p>
+  </div>
+</div>
+
+<div id="main-site" class="screen">
+
+  <section id="hero" class="section">
+    <img src="assets/images/galaxy-bg.jpeg" class="bg-img" alt="">
+    <img src="assets/images/nebula-overlay.png" class="overlay-img" alt="">
+    <div class="particles" id="hero-particles"></div>
+    <img src="assets/images/shooting-star.png" class="shooting-star" id="shooting-star-1" alt="">
+    <div class="hero-content">
+      <h1 class="hero-title" id="typing-title"></h1>
+      <p class="hero-sub" id="hero-subtitle">Untuk seseorang yang spesial.</p>
+    </div>
+    <div class="scroll-indicator">
+      <img src="assets/icons/arrow-down.svg" alt="">
+    </div>
+  </section>
+
+  <section id="main-photo" class="section">
+    <div class="section-inner">
+      <div class="photo-card floating">
+        <img src="assets/images/her-main.jpeg" alt="">
+      </div>
+      <p class="reveal-text">Hari ini ada seseorang yang bertambah usia.</p>
+      <p class="reveal-text">Dan menurutku dia cukup spesial.</p>
+    </div>
+  </section>
+
+  <section id="secret-stars" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">3 Bintang Untukmu, klik semuanya seng</h2>
+      <div class="stars-grid">
+        <button class="secret-star" data-star="1">
+          <img src="assets/icons/star.svg" alt="">
+          <span class="secret-number">1</span>
+        </button>
+        <button class="secret-star" data-star="2">
+          <img src="assets/icons/star.svg" alt="">
+          <span class="secret-number">2</span>
+        </button>
+        <button class="secret-star" data-star="3">
+          <img src="assets/icons/star.svg" alt="">
+          <span class="secret-number">3</span>
+        </button>
+      </div>
+      <p class="secret-message" id="secret-message"></p>
+      <button class="open-letter-btn hidden" id="open-letter-btn">Buka Pesan</button>
+    </div>
+  </section>
+
+  <section id="letter" class="section">
+    <div class="section-inner">
+      <div class="envelope" id="envelope">
+        <div class="envelope-back"></div>
+        <div class="envelope-flap"></div>
+        <img src="assets/icons/letter.svg" class="envelope-icon" alt="">
+      </div>
+      <div class="letter-paper hidden" id="letter-paper">
+        <p>Seng,</p>
+        <p>Selamat ulang tahun ya.</p>
+        <p>Aku cuma ingin mengucapkan semoga hari ini dan hari-hari berikutnya dipenuhi banyak hal baik, banyak tawa, dan banyak alasan untuk bahagia.</p>
+        <p>Terima kasih karena tanpa sadar sudah menjadi salah satu orang yang membuat hariku lebih menyenangkan.</p>
+        <p>Semoga semua hal yang sedang kamu perjuangkan bisa berjalan sesuai harapan.</p>
+        <p>Tetap jadi dirimu yang sekarang ya seng.</p>
+        <p>Dan semoga tahun ini menjadi salah satu tahun terbaik dalam hidupmu.</p>
+        <p class="letter-signoff">Happy Birthday Seng Awak.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="memory-gallery" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Best Photos</h2>
+      <div class="gallery-wrapper">
+        <div class="gallery-track" id="gallery-track">
+          <div class="gallery-item active">
+            <img src="assets/images/memory-1.jpeg" alt="">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/memory-2.jpeg" alt="">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/memory-3.jpeg" alt="">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/memory-4.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="gallery-dots" id="gallery-dots"></div>
+    </div>
+  </section>
+
+  <section id="final-surprise" class="section">
+    <img src="assets/images/galaxy-bg.jpeg" class="bg-img" alt="">
+    <div class="meteor" id="meteor"></div>
+    <div class="confetti-field" id="confetti-field"></div>
+    <div class="section-inner">
+      <button class="gift-btn" id="gift-btn">
+        <img src="assets/icons/gift.svg" alt="">
+        <span>Buka Hadiah</span>
+      </button>
+      <div class="final-content hidden" id="final-content">
+        <div class="photo-card floating">
+          <img src="assets/images/final-photo.jpeg" alt="">
+        </div>
+        <h2 class="final-title">Happy Birthday Seng Awak</h2>
+        <p class="final-sub">Semoga tahun ini membawa lebih banyak kebahagiaan daripada tahun sebelumnya.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<button id="music-toggle" class="music-toggle">
+  <svg id="music-icon-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 5v14l11-7L8 5z" fill="currentColor"/>
+  </svg>
+  <svg id="music-icon-pause" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <rect x="6" y="5" width="4" height="14" fill="currentColor"/>
+    <rect x="14" y="5" width="4" height="14" fill="currentColor"/>
+  </svg>
+</button>
+<audio id="bg-music" src="assets/musics/background.mp3" loop></audio>
+
+<script src="js/app.js"></script>
+</body>
+</html>
